@@ -7,8 +7,9 @@ import org.springframework.stereotype.Repository;
 
 
 import com.neting.tiecketapp.Entity.Compra;
+
 @Repository
 public interface CompraRepository extends JpaRepository <Compra, Long> {
-
-    Optional<Compra> findByCodigoTransaccion(String codigoTransaccion);
+    
+    Optional<Compra>findByCodigoTransaccion(String codigoTransaccion);
 }

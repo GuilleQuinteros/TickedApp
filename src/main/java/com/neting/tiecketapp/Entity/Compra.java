@@ -32,9 +32,9 @@ public class Compra {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    private LocalDateTime fecha;
     private BigDecimal total;
+    private LocalDateTime fecha;
+    
     private String metodopago;
 
     @Enumerated(EnumType.STRING)
